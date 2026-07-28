@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Viewer: webpack dev server",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run dev",
+      "cwd": "${workspaceFolder}/viewer"
+    },
+    {
+      "name": "Viewer: Chrome debug",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "skipFiles": [
+        "${workspaceFolder}/node_modules/**",
+        "<node_internals>/**"
+      ]
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Viewer: debug",
+      "configurations": [
+        "Viewer: webpack dev server",
+        "Viewer: Chrome debug"
+      ]
+    }
+  ]
+}

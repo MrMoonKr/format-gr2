@@ -1,0 +1,22 @@
+{
+  "name": "format-gr2-viewer",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Local three.js test viewer for @carbonenginejs/format-gr2.",
+  "scripts": {
+    "dev": "webpack serve --config webpack.config.cjs --mode development",
+    "build": "webpack --config webpack.config.cjs --mode production"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.4",
+    "html-webpack-plugin": "^5.6.8",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.109.1",
+    "webpack-cli": "^7.2.1",
+    "webpack-dev-server": "^5.2.6"
+  },
+  "dependencies": {
+    "three": "^0.185.1"
+  }
+}

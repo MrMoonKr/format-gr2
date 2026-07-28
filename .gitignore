@@ -21,3 +21,7 @@ carbonenginejs.md
 
 # local tests may contain personal data
 /test/
+
+# Local-only Three.js viewer asset configuration and build output.
+/viewer/assets.local.json
+/viewer/dist/
